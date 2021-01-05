@@ -44,7 +44,7 @@ def Analyze(text):
     #   Purely using TextBlob
     
     tBlob = TextBlob(text)
-    print('TextBlob said this: {}'.format(tBlob.sentiment.polarity))
+    print('TextBlob polarity score: {}'.format(tBlob.sentiment.polarity))
     
 
     #Using nltk and sklearn
@@ -53,7 +53,7 @@ def Analyze(text):
     stopWords = stopwords.words('english')
     sentAnalyzer = SentimentIntensityAnalyzer()
     scores = sentAnalyzer.polarity_scores(text=text)
-    print('Vader said this: {}'.format(scores['compound']))
+    print('Vader polarity score: {}'.format(scores['compound']))
     return (tBlob.sentiment.polarity, scores['compound'])
 
 #Analyze('Not bad')

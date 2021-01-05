@@ -86,8 +86,8 @@ driver.get("https://www.youtube.com")
 
 youTubeSearchBar = driver.find_element_by_name("search_query")
 youTubeSearchButton = driver.find_element_by_id("search-icon-legacy")
-youTubeSearchBar.send_keys(str(arguments.searchItem))
-# youTubeSearchBar.send_keys('critical role')
+# youTubeSearchBar.send_keys(str(arguments.searchItem))
+youTubeSearchBar.send_keys('critical role')
 youTubeSearchButton.click()
 time.sleep(2)
 
