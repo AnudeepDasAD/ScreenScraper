@@ -8,3 +8,5 @@ comments.
 
 Image depicts a sampling of 200 comments from 2 videos, and the average polarity scores for these comments according
 to two different sentiment analysis libraries.
+
+![Screen Scraper Demo](screenScraperDemo.png)
